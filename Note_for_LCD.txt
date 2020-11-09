@@ -1,0 +1,11 @@
+
+Open the "Libraries" in PIO Home, you could search "tft_espi" and the first one should be it (tft_eSPI by Bodmer). Add it to your project.
+Then, copy this file to "\.pio\libdeps\nodemcu-32s\TFT_eSPI" and replace the existing file.
+After that, you could just run the sample code ("LCD_sample.cpp") and that's it. (๑•̀ㅂ•́)و✧  Make sure your project is under the Ardunio framework.
+
+Connection: (It's configured in this file and could be changed to other ports if preferred)
+TFT_MOSI 23    to SDA
+TFT_SCLK 18    to SCL
+TFT_DC    2   to DC
+TFT_RST   4  to RES
+
