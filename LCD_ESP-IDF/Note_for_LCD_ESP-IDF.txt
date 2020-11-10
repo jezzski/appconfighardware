@@ -1,0 +1,15 @@
+
+Steps to make it work:
+
+1. Unzip the src file, put all the files into src folder of your project.
+2. Unzip the data file, put data folder in your project folder (it should be on the same level as src folder).
+   Files in the data folder will later be uploaded to the ESP32 (spiffs stuff...).
+3. put "partitions_example.csv" in your project folder.
+4. Add "board_build.partitions = partitions_example.csv" to your platformio.ini.
+
+5. Build, upload and monitor.
+6. In the "Project tasks" window, click "upload filesystem image" (Under "Platform" tab).
+7. That's it. (〃￣︶￣)人(￣︶￣〃)
+
+Connection is configured the same as the one used for the Arduino platform.
+It could be changed under the main.c (a bunch of defines at the beginning of the file)
